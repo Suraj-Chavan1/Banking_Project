@@ -150,7 +150,7 @@ The Walter White dashboard integrates various Azure services and machine learnin
   
 ### 2.2. External Data Integration For Company Reputation Check
 - **Azure Logic Apps:** Automates fetching of news articles related to businesses using a News API.
-- gitlink[backend](https://github.com/ANUJT65/bob_hackathon/tree/main/backend)
+- gitlink[backend]()
 - **Azure Cognitive Services:**  Analyze news sentiment and searches for pending legal cases on companies.
 - **Final output will be given, we do sentiment analysis on it and give weights to the sentiments and calculate a score.**
   - **Reference: on how sentiment analysis is done** [Sentiment Analysis of News Headlines](https://medium.com/@ramitsharma1994.rs/sentiment-analysis-of-news-headlines-with-microsoft-azure-cognitive-services-be3dedf3ccec)
@@ -158,7 +158,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ### 2.3. Auditing Agency Verification: (Check the reliability of the agency who audited the data)
 - **Verification Process:** Ensures that all financial and external data meet required standards and also if the auditing agencies are proper or not who audited all this financial data.
 - **Reference for why its necessary??:** [Satyam Scam Overview](https://www.5paisa.com/blog/satyam-scam)
-- **details on how it will be checked:**[Auditing agency reputation/authenticity check](https://github.com/ANUJT65/bob_hackathon/blob/main/backend/How%20auditing%20agency%20reputation%20will%20be%20checked_README.md)
 
   
 ### 3.Business Loan Approval Process Model 
@@ -170,7 +169,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 ### 4. Customer (Non-Businesses) Credit Score Calculation
 - **Azure Machine Learning:** Will use an improved ML model to calculate credit scores for non-business customers.
 - **Data Source**: Here the data source will be from 1.2 where we will take input cibil score forms/pdfs and ocr based inputs aswell as keyboard inputs which are stored in blob storage in csv format
-- **Reference model[git link]** [Credit Score Anomaly Detection]([https://github.com/ANUJT65/bob_hackathon/blob/main/backend/credit_score_calculations.py])
 
 ### 5. Email Classification of customer queries and Response from banking side
 - **Azure Cognitive Services and Azure ML:** Classifies incoming emails based on content and keywords.
@@ -178,14 +176,12 @@ The Walter White dashboard integrates various Azure services and machine learnin
  - **Integration with Step 1:** As part of the data preprocessing, incoming emails are processed and categorized.
  - **Integration with Step 6:** Automated responses and communications during the loan approval process and other customer interactions through banking side.
  - **Reference on how auto responding context aware emails work:[medium link]**[Python Gmail Auto Responder using Open AI](https://medium.com/@mehmetcan.oralalp/python-gmail-auto-responder-using-chatgpt-7f3a0fe4651c)
-  - **Reference on how gmails  classification is done:[git link]** [Python Gmail Classification using Azure ML](https://github.com/ANUJT65/bob_hackathon/blob/main/backend/Advance_Email_Classification.ipynb)
   
 
 ### 6. Lang-Chain and Azure Gen AI for Database Retrieval and analytics
 - **Azure Functions:** Uses Lang-Chain and Azure AI for efficient database retrieval and analytics based on predefined prompts.(This runs pandas and sql scripts so that access to csv and database can be achieved through generative ai)
 - User would just ask the bot which dataset they want to do analysis on and would retrieve it from blob storage(seperate storage for documents/pdfs in blob storage and info in csv helps for this purpose)
 - **Reference on how ai generated sql database retrieval work:[medium]** [Chat with MySQL using Python and LangChain](https://alejandro-ao.com/chat-with-mysql-using-python-and-langchain/)
-- **reference on how gen ai based analytics works:[git link]** [Chat Gen Ai and LangChain based analytics](https://github.com/ANUJT65/bob_hackathon/blob/main/backend/Gen%20AI%20analytics%20chat%20Using%20Pandas%20Dataframe%20Agent.ipynb)
   
 
 ## 7) Centralized Dashboard
@@ -248,8 +244,6 @@ The Walter White dashboard integrates various Azure services and machine learnin
 
 - ## Description:
 - We tried to make the login process for customers as easy as possible through otp but didnt compromise on security, which you will see as follows:
-![Wireframe - 8](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c1e4bbd8-6c22-4929-a2d2-4712aac779f2)
-![Wireframe - 9](https://github.com/ANUJT65/bob_hackathon/assets/123918593/38f0b253-e3a3-458e-b6fd-79aaf58aa874)
 
 
 ## PREVIOUS VERSION OF FRONTEND below
@@ -258,13 +252,11 @@ The Walter White dashboard integrates various Azure services and machine learnin
 - As you can see in image, customers just have to attach their financial documents and azure ocr will do the work for them of filling the forms aswell as form recognition .
 - This really improves engagement of users and makes the financial process less stressful.
 
-![Wireframe - 6](https://github.com/ANUJT65/bob_hackathon/assets/123918593/c4381e5d-7989-43ea-83af-2659ec15d6cf)
 
 ## Description of below image:
 - This is the centralized dashboard for the customer side where they can track their applications and whether they these applications approved or not.
 -  Here you could see attachments necessary for businesses / customers which are all stored in bank database with automated calculations(specially balance sheets) 
     ensuring that customers dont have to deal with these.
-![Wireframe - 5](https://github.com/ANUJT65/bob_hackathon/assets/123918593/e5dfce72-5e7a-4970-8332-23e37c652210)
 
 
 
@@ -275,24 +267,19 @@ The Walter White dashboard integrates various Azure services and machine learnin
 - Even mails could be sent as shown below to customers through the dashboard itself to user on the basis of risk,
   like much more interest rate for risky users or rejection mails etc
   
-![Wireframe - 2](https://github.com/ANUJT65/bob_hackathon/assets/123918593/bd72c41d-ef22-4a80-a86a-936aee510497)
 
 ## Description:
 - Here we could see categorization of incoming emails, which could be handled by respective departments and queries could be solved immediately boosting customer confidence.
-![Wireframe - 3](https://github.com/ANUJT65/bob_hackathon/assets/123918593/128c5c3c-966d-449d-859f-1ea5e7d6ba1b)
 
 #### Description:
 - This is one of our more innovative way of using generative ai where you could query the  database in natural language and get access to **read only** information
 - Here you could also do analytics of the attached document or retrieved documents using pandas agent and azure gen ai whose basic implementation is provided in 
   this repo.
-![Wireframe - 4](https://github.com/ANUJT65/bob_hackathon/assets/123918593/df72e034-e677-4f6d-862c-0b1d517d690f)
 
 - 
 
 
 ---
-## Tech Stack
-![tech_stack_updated](https://github.com/ANUJT65/bob_hackathon/assets/123918593/f9725c06-b448-4397-8328-5a23219e7bf9)
 
 ### Frontend
 
@@ -401,12 +388,8 @@ By implementing these comprehensive security measures, we ensure that our system
    - **Advantage:** Combines customer connection, automation, AI, and analytics into one platform.
    - **Benefit:** Addresses multiple business needs efficiently.
      
-   ![Alternative_producets](https://github.com/ANUJT65/bob_hackathon/assets/123918593/eb0537f9-9a1b-429c-aaed-3749466be375)
 
   
-### User Experience:
-
-![user_exp](https://github.com/ANUJT65/bob_hackathon/assets/123918593/fd308f68-1c37-4417-97b8-fb7a6b895986)
 ### Enhanced User Engagement for Customers and Bankers
 
 Walter White Dashboard is designed with a strong focus on improving user engagement for both customers and bankers. Our solution incorporates various features and functionalities that enhance the overall user experience, making interactions more efficient and satisfying.
