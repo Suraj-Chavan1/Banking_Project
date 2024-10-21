@@ -19,7 +19,7 @@ https://youtu.be/7P0Fopk-_jU?si=U-zxuZms3JbLXKRk
 
 ## WEBSITE LINK:[RECOMMENDED TO GO THROUGH FRONTEND, Cloud subscription ended please go through video for better visuals]
 - Frontend will be hosted on azure app services, temporarily hosted on vercel with all working models:
-- https://bob-hackathon-sigma.vercel.app/
+- https://banking-project-blue.vercel.app/
 - Backend hosted on azure app services[FLASK]:
 - https://bobcyberwardenfinal.azurewebsites.net
 
